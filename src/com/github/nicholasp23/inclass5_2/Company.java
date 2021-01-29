@@ -1,7 +1,7 @@
 package com.github.nicholasp23.inclass5_2;
 public class Company {
 
-    Employee[] employees = new Employee[5];
+    private Employee[] employees;
     private final String name;
 
     public Company(String name, Employee[] employees ){
@@ -17,12 +17,8 @@ public class Company {
         return employees;
     }
 
-    public int getEmployeeCount(Employee[] employees){
-        int count = 0;
-        for(Employee e : employees){
-            count++;
-        }
-        return count;
+    public int getEmployeeCount(){
+        return employees.length;
     }
 
 }
