@@ -12,7 +12,7 @@ public class Driver {
                 new Employee("Jacob", JobTitles.COMPUTER_ENGINEER)
         });
 
-        System.out.println(company.getName() + " Employees (" + company.getEmployeeCount(company.employees) + ")");
+        System.out.println(company.getName() + " Employees (" + company.getEmployeeCount() + ")");
         for(Employee employee: company.getEmployees()){
             System.out.println(employee.getName() + " (" + employee.job() + "   $"+ employee.getSalary() + " per/year)");
         }
